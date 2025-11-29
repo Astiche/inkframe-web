@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column; /* stack header and contact vertically */
+    justify-content: center;
+    align-items: center;    /* center horizontally */
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    background: var(--medium-green); /* body background */
+}
+
+/* HEADER-------------------------------------------------------------------------------------------------------- */
+
+table {
+    border-collapse: separate;
+    border-spacing: 60px 0; /* Horizontal spacing between columns */
+}
+
+th {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--soft-cream); /* headings */
+    padding: 10px 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+th a {
+    text-decoration: none;
+    color: var(--soft-cream);
+    transition: color 0.3s;
+}
+
+th:hover {
+    color: var(--medium-green); /* hover links */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+th a:hover {
+    color: var(--medium-green);
+}
+
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.logo-cell {
+    padding: 0;
+    width: 160px;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.title-cell {
+    padding: 0px;
+    text-align: start;
+    vertical-align: top;
+}
+
+.title-cell h1 {
+    text-align: left;
+    font-size: 44px;
+    margin: 10px 0px 0px 20px;
+    color: var(--soft-cream);
+}
+
+.tagline, .sub-tagline {
+    width: 180px;
+    margin: 0px 20px;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--soft-cream);
+}
+
+.nav-cell {
+    padding: 0px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.title-cell h1 a {
+    text-decoration: none;
+    color: var(--soft-cream);
+    transition: color 0.3s;
+}
+
+.title-cell h1 a:hover {
+    color: var(--dark-green);
+}
+
+.spacer {
+    width: 50px; /* Adjust spacing between columns */
+}
+
+/* CONTAINER-------------------------------------------------------------------------------------------------------- */
+
+.contact-container {    
+    background: var(--soft-cream); /* form background */
+    padding: 0px 25px 25px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--medium-green); /* headings */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--dark-green); /* input border */
+    font-size: 16px;
+    resize: none;
+    color: var(--dark-green);
+    background-color: var(--soft-cream);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--medium-green);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--medium-green); /* focus */
+    box-shadow: 0 0 5px rgba(129, 144, 103, 0.5);
+}
+
+button {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--dark-green); /* button */
+    color: var(--soft-cream); /* button text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--medium-green); /* button hover */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--medium-green); /* labels */
+}
+
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
